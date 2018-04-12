@@ -2,9 +2,10 @@ package net.mlh.zqy.mvp1.mvp.presenter;
 
 import android.content.Context;
 
+import net.mlh.zqy.mvp1.base.BasePresenter;
 import net.mlh.zqy.mvp1.mvp.contract.Cuser;
 import net.mlh.zqy.mvp1.mvp.model.MuserImpl;
-import net.mlh.zqy.mvp1.mvp.base.BasePresenter;
+
 
 
 /**
