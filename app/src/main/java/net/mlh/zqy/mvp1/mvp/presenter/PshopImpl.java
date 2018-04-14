@@ -2,11 +2,15 @@ package net.mlh.zqy.mvp1.mvp.presenter;
 
 import android.content.Context;
 
-import net.mlh.zqy.mvp1.base.BasePresenter;
+import net.mlh.zqy.mvp1.bean.BookBean;
+import net.mlh.zqy.mvp1.mvp.base.BasePresenter;
 import net.mlh.zqy.mvp1.mvp.contract.Cshop;
 import net.mlh.zqy.mvp1.mvp.model.MshopImpl;
 
 import java.util.List;
+
+import io.reactivex.functions.Action;
+import io.reactivex.functions.Consumer;
 
 
 /**
@@ -27,5 +31,24 @@ public class PshopImpl extends BasePresenter<Cshop.IVshop, MshopImpl> implements
     public void getList() {
       stringList = mModel.getStringList();
       mView.showAdapter(stringList);
+    }
+
+    @Override
+    public void getBook() {
+        mRxmanager.add(mModel.getBook().subscribe(new Consumer<BookBean>() {
+            @Override
+            public void accept(BookBean bookBean) throws Exception {
+                        mView.showBook(bookBean);
+            }
+        }, new Consumer<Throwable>() {
+            @Override
+            public void accept(Throwable throwable) throws Exception {
+
+            }
+        }, new Action() {
+            @Override
+            public void run() throws Exception {
+            }
+        }));
     }
 }

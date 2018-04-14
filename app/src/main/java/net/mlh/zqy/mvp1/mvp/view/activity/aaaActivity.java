@@ -2,8 +2,8 @@ package net.mlh.zqy.mvp1.mvp.view.activity;
 
 import net.mlh.zqy.mvp1.R;
 import net.mlh.zqy.mvp1.mvp.base.BaseActivity;
-import net.mlh.zqy.mvp1.mvp.contract.Cuser;
-import net.mlh.zqy.mvp1.mvp.presenter.PuserImpl;
+import net.mlh.zqy.mvp1.mvp.contract.Caaa;
+import net.mlh.zqy.mvp1.mvp.presenter.PaaaImpl;
 
 /**
  * Created by Liang_Lu on 2017/12/21.
@@ -12,7 +12,7 @@ import net.mlh.zqy.mvp1.mvp.presenter.PuserImpl;
  * @github https://github.com/LiangLuDev
  */
 
-public class userActivity extends BaseActivity<PuserImpl> implements Cuser.IVuser {
+public class aaaActivity extends BaseActivity<PaaaImpl> implements Caaa.IVaaa {
 
 
     @Override
@@ -26,14 +26,15 @@ public class userActivity extends BaseActivity<PuserImpl> implements Cuser.IVuse
 
     }
 
+
     @Override
     public int setContentViewId() {
-        return R.layout.activity_user;
+        return R.layout.activity_aaa;
     }
 
     @Override
     public void createPresenter() {
-        mPresenter = new PuserImpl(mContext, this);
+        mPresenter = new PaaaImpl(mContext, this);
     }
 
     @Override

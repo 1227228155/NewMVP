@@ -1,4 +1,4 @@
-package net.mlh.zqy.mvp1.base;
+package net.mlh.zqy.mvp1.mvp.base;
 
 import android.content.Context;
 import android.content.Intent;
@@ -29,12 +29,20 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         initView();
     }
 
+
+
     /**
      * 初始化方法
      */
     protected void initView() {
 
     }
+
+    /**
+     * 初始化监听事件
+     */
+    protected abstract void initListener();
+
 
     /**
      * 获取contentView 资源id

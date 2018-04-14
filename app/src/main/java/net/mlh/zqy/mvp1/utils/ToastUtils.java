@@ -11,7 +11,7 @@ import net.mlh.zqy.mvp1.App;
  */
 
 public class ToastUtils {
-    private static Context context = App.getAppContext();
+    private static Context context = App.getInstance();
     private static Toast toast;
 
     public static void show(@StringRes int resId) {

@@ -3,7 +3,7 @@ package net.mlh.zqy.mvp1.utils.rxhelper;
 
 import android.support.annotation.NonNull;
 
-import net.mlh.zqy.mvp1.base.BaseModel;
+import net.mlh.zqy.mvp1.mvp.base.BaseModel;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;

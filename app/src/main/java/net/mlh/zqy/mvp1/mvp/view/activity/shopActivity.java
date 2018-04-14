@@ -7,7 +7,8 @@ import android.widget.Toast;
 
 import net.mlh.zqy.mvp1.R;
 import net.mlh.zqy.mvp1.adapter.BaseRecyclerAdapter;
-import net.mlh.zqy.mvp1.base.BaseActivity;
+import net.mlh.zqy.mvp1.bean.BookBean;
+import net.mlh.zqy.mvp1.mvp.base.BaseActivity;
 import net.mlh.zqy.mvp1.mvp.contract.Cshop;
 import net.mlh.zqy.mvp1.mvp.presenter.PshopImpl;
 import net.mlh.zqy.mvp1.mvp.view.activity.adapter.shopAdapter;
@@ -32,7 +33,10 @@ public class shopActivity extends BaseActivity<PshopImpl> implements Cshop.IVsho
         super.initView();
         recyclerView = findViewById(R.id.shop_recycler);
         mPresenter.getList();
+        mPresenter.getBook();
     }
+
+
 
     @Override
     public int setContentViewId() {
@@ -51,6 +55,11 @@ public class shopActivity extends BaseActivity<PshopImpl> implements Cshop.IVsho
 
     @Override
     public void hideLoading() {
+
+    }
+
+    @Override
+    public void initListener() {
 
     }
 
@@ -73,5 +82,11 @@ public class shopActivity extends BaseActivity<PshopImpl> implements Cshop.IVsho
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickListener(this);
         adapter.setOnItemLongClickListener(this);
+    }
+
+    @Override
+    public void showBook(BookBean bookBean) {
+        Toast.makeText(mContext, "走了方法", Toast.LENGTH_SHORT).show();
+        Toast.makeText(mContext,bookBean.getMale().get(0).getName(), Toast.LENGTH_SHORT).show();
     }
 }

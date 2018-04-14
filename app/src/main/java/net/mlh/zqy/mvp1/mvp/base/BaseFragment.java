@@ -1,4 +1,4 @@
-package net.mlh.zqy.mvp1.base;
+package net.mlh.zqy.mvp1.mvp.base;
 
 import android.content.Context;
 import android.content.Intent;

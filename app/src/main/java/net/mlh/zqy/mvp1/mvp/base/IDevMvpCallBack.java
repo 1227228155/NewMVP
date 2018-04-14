@@ -1,4 +1,4 @@
-package net.mlh.zqy.mvp1.base;
+package net.mlh.zqy.mvp1.mvp.base;
 
 /**
  * Created by Liang_Lu on 2017/9/8.

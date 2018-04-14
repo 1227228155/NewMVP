@@ -3,7 +3,7 @@ package net.mlh.zqy.mvp1.utils.rxhelper;
 
 import android.util.Log;
 
-import net.mlh.zqy.mvp1.base.IDevMvpCallBack;
+import net.mlh.zqy.mvp1.mvp.base.IDevMvpCallBack;
 import net.mlh.zqy.mvp1.utils.ToastUtils;
 
 import io.reactivex.Observer;

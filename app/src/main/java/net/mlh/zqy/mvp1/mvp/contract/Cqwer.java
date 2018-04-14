@@ -1,8 +1,8 @@
 package net.mlh.zqy.mvp1.mvp.contract;
 
-
 import net.mlh.zqy.mvp1.mvp.base.IBasePresenter;
 import net.mlh.zqy.mvp1.mvp.base.IBaseView;
+import net.mlh.zqy.mvp1.mvp.base.IBaseModel;
 
 /**
  * Created by Liang_Lu on 2017/12/21.
@@ -11,13 +11,17 @@ import net.mlh.zqy.mvp1.mvp.base.IBaseView;
  * @github https://github.com/LiangLuDev
  */
 
-public interface Cuser {
+public interface Cqwer {
 
-    interface IPuser extends IBasePresenter {
+    interface IPqwer extends IBasePresenter {
 
     }
 
-    interface IVuser extends IBaseView {
+    interface IMqwer extends IBaseModel {
+
+    }
+
+    interface IVqwer extends IBaseView {
 
     }
 }

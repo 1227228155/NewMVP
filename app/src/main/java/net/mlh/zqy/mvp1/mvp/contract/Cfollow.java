@@ -1,6 +1,5 @@
 package net.mlh.zqy.mvp1.mvp.contract;
 
-
 import net.mlh.zqy.mvp1.mvp.base.IBasePresenter;
 import net.mlh.zqy.mvp1.mvp.base.IBaseView;
 
@@ -11,13 +10,13 @@ import net.mlh.zqy.mvp1.mvp.base.IBaseView;
  * @github https://github.com/LiangLuDev
  */
 
-public interface Cuser {
+public interface Cfollow {
 
-    interface IPuser extends IBasePresenter {
+    interface IPfollow extends IBasePresenter {
 
     }
 
-    interface IVuser extends IBaseView {
+    interface IVfollow extends IBaseView {
 
     }
 }
